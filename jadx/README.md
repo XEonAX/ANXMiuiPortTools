@@ -42,6 +42,10 @@ JDK 8 or higher must be installed:
 Scripts for run jadx will be placed in `build/jadx/bin`
 and also packed to `build/jadx-<version>.zip`
 
+### macOS
+You can install using brew:
+
+	brew install jadx
 
 ### Run
 Run **jadx** on itself:
@@ -62,6 +66,8 @@ options:
   -j, --threads-count                 - processing threads count
   -r, --no-res                        - do not decode resources
   -s, --no-src                        - do not decompile source code
+  --single-class                      - decompile a single class
+  --output-format                     - can be 'java' or 'json' (default: java)
   -e, --export-gradle                 - save as android gradle project
   --show-bad-code                     - show inconsistent code (incorrectly decompiled)
   --no-imports                        - disable use of imports, always write entire package name
